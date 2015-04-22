@@ -27,7 +27,7 @@ function used_files() {
 }
 
 function files_title_map($file) {
-    return array(
+    $files_map = array(
         "1C_BI.php" => array(
                 "title" => "1C:бизнесс-анализ"
             ),
@@ -49,7 +49,9 @@ function files_title_map($file) {
         "presentations.php" => array(
                 "title" => "Презинтации"
             )
-    )[$file];
+    );
+	
+	return $files_map[$file];
 }
 
 function is_in_file($file_name, $search_string) {
