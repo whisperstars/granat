@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">   
+    <link rel="stylesheet" href="css/flashmessage.css" type="text/css" media="screen">   
     <script src="js/jquery-1.6.3.min.js" type="text/javascript"></script>
     <script src="js/FF-cash.js" type="text/javascript"></script>
     <script src="js/jquery.featureCarousel.js" type="text/javascript"></script>
+    <script src="js/jquery.flashmessage.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         if ($("#carousel").length > 0) {
@@ -31,7 +33,7 @@
     </script>
     <script type="text/javascript">
         $(function () {
-            var base_path = '/granat-work/';
+            var base_path = '/granat/';
             $('.menu a').each(function(a, b) {
                 if(base_path + $(b).attr('href') === window.location.pathname) {
                     $(b).parent().addClass('active');

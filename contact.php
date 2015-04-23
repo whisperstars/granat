@@ -11,24 +11,24 @@
         </header>
         
         <!--==============================content================================-->
-        <section id="content"><div class="ic">More Website Templates @ TemplateMonster.com. December10, 2011!</div>
+        <section id="content">
             <div class="content-bg">
                 <div class="main">
                     <div class="container_12">
                         <div class="wrapper">
                             <article class="grid_8">
-                                <h3>Contact Form</h3>
-                                <form id="contact-form2" method="post" enctype="multipart/form-data">                    
+                                <h3>Контактная форма</h3>
+                                <form id="contact-form2">                    
                                     <fieldset>
-                                          <label><span class="text-form">Имя:</span><input name="p1" type="text" /></label>
-                                          <label><span class="text-form">Email:</span><input name="p2" type="text" /></label>                              
+                                          <label><span class="text-form">Имя:</span><input class="name" name="name" type="text" /></label>
+                                          <label><span class="text-form">Контакт:</span><input class="contact" name="contact" type="text" /></label>                              
                                           <div class="wrapper">
                                             <div class="text-form">Сообщение:</div>
                                             <div class="extra-wrap">
-                                                <textarea></textarea>
+                                                <textarea name="message" class="message"></textarea>
                                                 <div class="clear"></div>
                                                 <div class="buttons2">
-                                                    <a href="#" class="send" onClick="document.getElementById('contact-form2').submit()">Отправить</a>
+                                                    <a href="#" class="send_btn send">Отправить</a>
                                                 </div> 
                                             </div>
                                           </div>                            
@@ -36,16 +36,14 @@
                                 </form>
                             </article>    
                             <article class="grid_4">
-                                <h3>Contact Info</h3>
+                                <h3>Как с нами связаться</h3>
                                 <figure class="img-indent-bot img-border">
-                                    <iframe width="298" height="179" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.6932349875933!2d35.037858400000005!3d48.404833999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfb5c5777534f%3A0x3b5574e3287c955e!2sPanikakhy+St%2C+2%2C+Dnipropetrovs&#39;k%2C+Dnipropetrovsk+Oblast!5e0!3m2!1sen!2sua!4v1429793082061" width="500" height="225" frameborder="0" style="border:0"></iframe>
                                 </figure>
                                 <dl>
-                                    <dt class="indent-bot">USA<br>8901 Marmora Road, Glasgow, D04 89GR.</dt>
-                                    <dd><span>Freephone:</span>  +1 800 559 6580</dd>
-                                    <dd><span>Telephone:</span>  +1 800 603 6035</dd>
-                                    <dd><span>Fax:</span>  +1 800 889 9898</dd>
-                                    <dd><span>Email:</span><a href="#">mail@demolink.org</a></dd>
+                                    <dd><span>МТС:</span> +3 8(095) 90 68 520</dd>
+                                    <dd><span>Киевстар:</span> +3 8(067) 56 72 652</dd>
+                                    <dd><span>Email:</span><a href="mailto:info@granat.dp.ua">info@granat.dp.ua</a></dd>
                                 </dl>
                             </article>                        
                         </div>
@@ -60,5 +58,7 @@
     <footer>
         <?php include 'includes/footer.html'; ?>
     </footer>
+
+    <script type="text/javascript" src="js/contactForm.js"></script>
 </body>
 </html>
