@@ -18,7 +18,7 @@
                         <div class="wrapper">
                             <article class="grid_8">
                                 <h3>Контактная форма</h3>
-                                <form id="contact-form2">                    
+                                <!--<form id="contact-form2">                    
                                     <fieldset>
                                           <label><span class="text-form">Имя:</span><input class="name" name="name" type="text" /></label>
                                           <label><span class="text-form">Контакт:</span><input class="contact" name="contact" type="text" /></label>                              
@@ -33,6 +33,29 @@
                                             </div>
                                           </div>                            
                                     </fieldset>                     
+                                </form>-->
+
+                                <form>
+                                    <div class="name-row row">
+                                        <label for="name">Имя:</label>
+                                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" />
+                                    </div>
+
+                                    <div class="contact-row row">
+                                        <label for="contact">Контакты:</label>
+                                        <input type="text" id="contact" name="contact" placeholder="Как с вами связаться" />  
+                                    </div>
+
+                                    <div class="message-row row">
+                                        <label for="message">Сообщение:</label>
+                                        <textarea name="message" id="message" class="message" placeholder="Введите ваше сообщение"></textarea>
+                                    </div>
+
+                                    <div class="btn-row row">
+                                        <div class="buttons2">
+                                            <a href="#" class="send_btn send">Отправить</a>
+                                        </div>
+                                    </div>
                                 </form>
                             </article>    
                             <article class="grid_4">
